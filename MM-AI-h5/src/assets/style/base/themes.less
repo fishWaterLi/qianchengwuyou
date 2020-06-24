@@ -1,0 +1,71 @@
+// 实现换肤功能时应用。
+/*基础颜色*/
+@white: #fff;
+/****颜色规范****/
+@base-active-color: #001526; //主题颜色，小面积使用，用于突出按钮等元素
+@base-active-assist-color: #1c8cfa; //主题辅助颜色 
+@base-text-color: #221914; //重要文本色，用于普通段落
+@base-text-assist-color: #898989; //次要文本，用于文字说明,输入框占位符等等
+@base-part-color: #f7f7f7; //分割线
+@base-text-active-color: #1c8cfa;
+@btn-text-color: #1c8cfa; //主要按钮文本颜色
+@btn-active-text-color: #fff; //主要按钮激活状态文本颜色
+@table-thead-bg-color: #fdedee;
+/****颜色规范****/
+
+/****后台颜色规范****/
+@admin-active-color: #001526; //主题颜色，小面积使用，用于突出按钮等元素
+@admin-active-assist-color: #1c8cfa; //主题辅助颜色 
+@admin-text-color: #262521; //重要文本色，用于普通段落
+@admin-text-assist-color: #838383; //次要文本，用于文字说明,输入框占位符等等
+@admin-part-color: #e6e6e6; //分割线
+@admin-text-active-color: #1c8cfa;
+@admin-btn-text-color: #1c8cfa; //主要按钮文本颜色
+@admin-btn-active-text-color: #fff; //主要按钮激活状态文本颜色
+/****后台颜色规范****/
+
+/****字体大小****/
+@f40p: 40px;
+@f36p: 36px;
+@f34p: 34px; //重要标题或按钮
+@f32p: 32px;
+@f30p: 30px;
+@f28p: 28px; //用于大多数文本，例如列表信息
+@f26p: 26px;
+@f24p: 24px; //用于辅助性文字
+@f22p: 22px;
+@f20p: 20px;
+@f18p: 18px;
+@f16p: 16px;
+@f14p: 14px;
+/****字体大小****/
+@imgUrl: '~images/';
+@box-w: 1300px;
+@admin-top-h:50px;
+@admin-left-w:166px;
+/* 修改主题 */
+@primary-color: #1c8cfa;
+@border-radius-base: 0;
+
+/* 表格颜色 */
+@table-th: #fdedee;
+@table-td-even: #fffafa;
+@page-curr: #1c8cfa;
+
+/* 统计数据颜色 */
+@resume-orage: #ffb053;
+@resume-palered: #1c8cfa;
+@resume-paleblue: #5eabff;
+
+
+.common-linear(@deg: 90deg, @start: @base-active-color, @end: @base-active-assist-color) {
+  background-color: @start;
+  background: -moz-linear-gradient(@deg, @start 0%, @end 100%);
+  background: -webkit-gradient(linear, color-stop(0%, @start 0%), color-stop(100%, @end));
+  background: -webkit-linear-gradient(@deg, @start 0%, @end 100%);
+  background: -o-linear-gradient(@deg, @start 0%, @end 100%);
+  background: -ms-linear-gradient(@deg, @start 0%, @end 100%);
+  background: linear-gradient(@deg, @start 0%, @end 100%);
+}
+
+

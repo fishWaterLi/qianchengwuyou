@@ -1,0 +1,97 @@
+.block-center(@w) {
+    width: @w;
+    margin: 0 auto;
+  }
+  .xy() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .x() {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .y() {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  // .container {
+  //     .Text-ellipsis();
+  // }
+  .Text-ellipsis () {
+    /* 
+       * 文字溢出隐藏显示省略号，需要用在与文字最近的一个block|inline-block的祖先元素上(ie6中该元素的width需要显性的声明且不能为auto,100%是可行的) 
+       */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  // 文字(强制)折行
+  // .container {
+  //     .Text-break();
+  // }
+  .Text-break () {
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  // 自定义字体
+  // .font-face("/some/font/url","FamilyName");
+  
+  .Font-face(@path, @font-name) {
+    @font-face {
+      font-family: @font-name;
+      src: url("@{path}/@{font-name}.eot");
+      src: url("@{path}/@{font-name}.eot?#iefix") format("embedded-opentype"),
+        url("@{path}/@{font-name}.woff") format("woff"),
+        url("@{path}/@{font-name}.ttf") format("truetype"),
+        url("@{path}/@{font-name}.svg#svgFontName") format("svg");
+    }
+  }
+  // .container {
+  //     .clearfix();
+  // }
+  // 清除浮动
+  .clearfix() {
+    &:before,
+    &:after {
+      display: table;
+      content: "";
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  // size settings
+  // .square {
+  //     .size(16px);
+  // }
+  .size(@size) {
+    width: @size;
+    height: @size;
+  }
+  // .rect {
+  //     .size(320px, 80px);
+  // }
+  .size(@wdith, @height) {
+    width: @wdith;
+    height: @height;
+  }
+  .posr() {
+      position: relative;
+      top: 0;
+      left: 0;
+  }
+  .actcheckimg{
+    p{ display: inline-block}
+    img{
+      width: auto;
+      vertical-align: middle;
+      margin: 0 4px;
+      display: inline-block;
+    }
+  }
+  

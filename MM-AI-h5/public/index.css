@@ -1,0 +1,21 @@
+@media screen and (max-width: 1200px) {
+    #app {
+        min-width: 1200px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+.between {
+    justify-content: space-between;
+}
+.around {
+    justify-content: space-around;
+}
+.wp50 {
+    width: 50%;
+}
+.mgt30 {
+    margin: 0 30px;
+}
